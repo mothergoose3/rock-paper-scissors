@@ -10,18 +10,33 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="./style.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Estonia&display=swap");
+    </style>
     <title>Medieval Roshambo</title>
   </head>
   <body>
     <header>
       <section class="title">
-        <h1>SHIELD BOW SPEAR</h1>
+        <h1>
+          <span class="h1-shield-text">SHIELD</span>
+          &nbsp;
+          <span class="h1-spear-text">SPEAR</span>
+          &nbsp;
+          <span class="h1-bow-text">BOW</span>
+        </h1>
         <p>
-          <span>Shield beats Spear</span>
+          <span class="p-shield-text">Shield</span>
+          beats
+          <span class="p-spear-text">Spear</span>
           |
-          <span>Spear beats Arrows</span>
+          <span class="p-spear-text">Spear</span>
+          beats
+          <span class="p-bow-text">Arrows</span>
           |
-          <span>Arrows beats Shield</span>
+          <span class="p-bow-text">Arrows</span>
+          beats
+          <span class="p-shield-text">Shield</span>
         </p>
         <h4>CHOOSE YOUR WEAPON!</h4>
       </section>
@@ -30,38 +45,59 @@
       <div class="game-container">
         <div class="weapons">
           <button class="shield">
-            <img src="" alt="" />
+            <img
+              src="https://img.icons8.com/dusk/64/000000/shield.png"
+              alt="shield by Icons8"
+              class="icons8 shield-weapon"
+            />
             <p>SHIELD</p>
           </button>
           <button class="spear">
-            <img src="" alt="" />
+            <img
+              src="https://img.icons8.com/external-icongeek26-linear-colour-icongeek26/64/000000/external-spear-alaska-icongeek26-linear-colour-icongeek26.png"
+              alt="spear by Icons8"
+              class="icons8 spear-weapon"
+            />
             <p>SPEAR</p>
           </button>
           <button class="bow-and-arrow">
-            <img src="" alt="" />
+            <img
+              src="https://img.icons8.com/external-icongeek26-linear-colour-icongeek26/64/000000/external-bow-and-arrow-hunting-icongeek26-linear-colour-icongeek26.png"
+              alt="bow and arrow by Icons8"
+              class="icons8 baa-weapon"
+            />
             <p>BOW</p>
           </button>
         </div>
-        <div class="strike-count">
-          <span>Strike Count: 0</span>
-        </div>
-        <div class="battle-arena">
-          <span>Battle Arena: Empty</span>
-        </div>
-        <div class="scoreboard">
-          <p>
-            <span>Your HP: 100%</span>
-            &nbsp;
-            <span>Enemy's HP: 100%</span>
-          </p>
-        </div>
+        <div class="page-divider"></div>
+        <section class="game-status">
+          <div class="challenger-tab">
+            <p class="challenger-tab-text">Challenger's Weapon</p>
+            <img
+              src="https://img.icons8.com/doodle/96/000000/armored-helmet.png"
+              alt="challenger's helm"
+              class="challenger"
+            />
+          </div>
+          <div class="arena">
+            <p class="attack-count">Attack Count: 0</p>
+            <p class="health-status">
+              Your Health: 100% | Challenger's Health: 100%
+            </p>
+            <p class="battle-log">Battle Log: Empty</p>
+          </div>
+        </section>
       </div>
+      <section class="endgame-tab">
+        <p class="endgame-text"></p>
+        <button class="try-again">Try Again!</button>
+      </section>
     </main>
     <footer>
       <div class="web-footer">
         <img
-          src="./images/footer-logo.png"
-          alt="mothergoose3 logo"
+          src="https://img.icons8.com/external-icongeek26-linear-colour-icongeek26/64/000000/external-goose-birds-icongeek26-linear-colour-icongeek26.png"
+          alt="goose logo by Icons8"
           class="logo"
         />
         <span class="web-footer-text">mothergoose3</span>
