@@ -15,18 +15,38 @@ html {
 body {
   background: #1c1c1d;
   color: #ffffff;
+  font-family: "Estonia", cursive, sans-serif;
 }
 
 h1 {
-  margin: 2rem 0;
+  margin-top: 0.5rem;
+  font-size: 36px;
+}
+
+span.h1-shield-text,
+.p-shield-text {
+  color: #67bfa2;
+}
+
+span.h1-spear-text,
+.p-spear-text {
+  color: #e8c77c;
+}
+
+span.h1-bow-text,
+.p-bow-text {
+  color: #705b5b;
 }
 
 .title p {
-  margin: 1.5rem 0;
+  margin: 0.875rem 0;
+  font-size: 22px;
 }
 
 .title h4 {
-  margin: 3rem 0;
+  margin-top: 2rem;
+  margin-bottom: 0.875rem;
+  font-size: 22px;
 }
 
 .title {
@@ -34,9 +54,109 @@ h1 {
 }
 
 .game-container {
+  margin: 0 1.875rem;
+  text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.weapons,
+.game-status {
+  box-shadow: 0px 8px 12px 12px rgba(17, 17, 19, 0.75);
+  -webkit-box-shadow: 0px 8px 12px 12px rgba(17, 17, 19, 0.75);
+  -moz-box-shadow: 0px 8px 12px 12px rgba(17, 17, 19, 0.75);
+}
+
+button {
+  color: #ffffff;
+  background-color: #1c1c1d;
+  border: none;
+}
+
+.weapons {
+  padding: 1.25rem;
+  border: 0.375rem solid #2c2c2d;
+  border-radius: 0.5rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.shield-weapon,
+.spear-weapon,
+.baa-weapon {
+  width: 70px;
+  height: 70px;
+}
+
+button p {
+  margin: 0.5rem auto;
+  color: #9d9da5;
+  font-family: "Estonia", cursive, sans-serif;
+  font-size: 22px;
+}
+
+button.shield p {
+  color: #67bfa2;
+}
+
+button.spear p {
+  color: #e8c77c;
+}
+
+button.bow p {
+  color: #705b5b;
+}
+
+.page-divider {
+  width: 100%;
+  margin: 1.275rem;
+}
+
+.game-status {
+  width: 100%;
+  padding: 1.25rem;
+  border: 0.375rem solid #2c2c2d;
+  border-radius: 0.5rem;
+  font-size: 22px;
+}
+
+.challenger-tab {
+  border-bottom: 0.275rem solid #2c2c2d;
+}
+
+.challenger-tab p,
+.challenger {
+  margin: 0.5rem;
+}
+
+.challenger {
+  width: 70px;
+  height: 70px;
+}
+
+.arena p {
+  margin: 1.125rem 0;
+}
+
+.endgame-tab {
+  margin: 0 1.875rem;
+  text-align: center;
+  height: 170px;
+}
+
+.endgame-tab-text,
+.endgame-tab button {
+  font-size: 22px;
+}
+
+.endgame-tab button {
+  visibility: hidden;
+  padding: 20px;
+  border: 0.375rem solid #2c2c2d;
+  border-radius: 0.5rem;
+  font-family: "Estonia", cursive, sans-serif;
 }
 
 .web-footer {
@@ -44,18 +164,93 @@ h1 {
   bottom: 0;
   left: 0;
   right: 0;
+  height: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .logo {
-  width: 1.2rem;
+  width: 30px;
   margin-right: 0.3rem;
 }
 
 .fa-github {
   color: #ffffff;
   cursor: pointer;
-  margin-left: 0.3rem;
+  margin-left: 0.7rem;
+}
+
+@media only screen and (min-width: 650px) {
+  h1 {
+    font-size: 56px;
+  }
+
+  .title p {
+    font-size: 32px;
+  }
+
+  .title h4 {
+    font-size: 32px;
+  }
+
+  .weapons {
+    padding: 0.5rem;
+    width: 600px;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .shield-weapon,
+  .spear-weapon,
+  .baa-weapon {
+    width: 85px;
+    height: 85px;
+  }
+
+  .game-status {
+    width: 600px;
+    font-size: 28px;
+  }
+
+  .challenger-tab p,
+  .challenger {
+    margin: 0.4rem;
+  }
+
+  .challenger {
+    width: 80px;
+    height: 80px;
+  }
+
+  .arena p {
+    margin: 0.4rem 0;
+  }
+
+  .endgame-tab {
+    height: 140px;
+  }
+
+  .endgame-text {
+    margin: 1.875rem 0;
+    font-size: 36px;
+    font-weight: 500;
+  }
+
+  .endgame-tab button {
+    width: 200px;
+    height: 90px;
+    font-size: 32px;
+  }
+
+  .endgame-tab button {
+    padding: 20px;
+    border: 0.375rem solid #2c2c2d;
+    border-radius: 0.5rem;
+    font-family: "Estonia", cursive, sans-serif;
+  }
+
+  .web-footer-text {
+    font-size: 24px;
+  }
 }
