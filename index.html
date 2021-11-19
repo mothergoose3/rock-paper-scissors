@@ -44,7 +44,7 @@
     <main>
       <div class="game-container">
         <div class="weapons">
-          <button class="shield">
+          <button class="shield weapon-button dead-button">
             <img
               src="https://img.icons8.com/dusk/64/000000/shield.png"
               alt="shield by Icons8"
@@ -52,7 +52,7 @@
             />
             <p>SHIELD</p>
           </button>
-          <button class="spear">
+          <button class="spear weapon-button">
             <img
               src="https://img.icons8.com/external-icongeek26-linear-colour-icongeek26/64/000000/external-spear-alaska-icongeek26-linear-colour-icongeek26.png"
               alt="spear by Icons8"
@@ -60,7 +60,7 @@
             />
             <p>SPEAR</p>
           </button>
-          <button class="bow-and-arrow">
+          <button class="bow-and-arrow weapon-button">
             <img
               src="https://img.icons8.com/external-icongeek26-linear-colour-icongeek26/64/000000/external-bow-and-arrow-hunting-icongeek26-linear-colour-icongeek26.png"
               alt="bow and arrow by Icons8"
@@ -73,14 +73,10 @@
         <section class="game-status">
           <div class="challenger-tab">
             <p class="challenger-tab-text">Challenger's Weapon</p>
-            <img
-              src="https://img.icons8.com/doodle/96/000000/armored-helmet.png"
-              alt="challenger's helm"
-              class="challenger"
-            />
+            <p class="challenger-weapon">Unarmed</p>
           </div>
           <div class="arena">
-            <p class="attack-count">Attack Count: 0</p>
+            <p class="attempt attempt-count">Attempt: 0</p>
             <p class="health-status">
               Your Health: 100% | Challenger's Health: 100%
             </p>
@@ -102,6 +98,13 @@
         </a>
       </div>
     </footer>
+    <div class="end-game-modal">
+      <div class="modal-contents">
+        <h3 class="end-game-text"></h3>
+        <div class="modal-divider"></div>
+        <button class="modal-button">Fight Again!</button>
+      </div>
+    </div>
     <script src="./app.js"></script>
   </body>
 </html>
