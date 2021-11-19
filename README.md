@@ -1,6 +1,7 @@
 # rock-paper-scissors
 
 Rock, paper, scissors game website using JavaScript, HTML, CSS!
+Thanks to MooniiDev for the layout inspiration!
 
 Spear icon by Icons8 ==> https://icons8.com/icon/FHYS4HoUvGkk/spear
 
